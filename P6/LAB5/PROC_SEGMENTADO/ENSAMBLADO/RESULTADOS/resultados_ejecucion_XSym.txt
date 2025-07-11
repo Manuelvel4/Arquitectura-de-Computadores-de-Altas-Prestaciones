@@ -1,0 +1,36 @@
+PROGRAMA: XSym
+ salida de comprobacion de la instruccion que hay en un ciclo en cada etapa
+ciclo  CP, dir  BUS, I. hex   DL, I. ascii
+                                                   ETAPAS: DL, ALU, M, FMTL, ES         RIESGOS
+                                                   DL    ALU   M     FMTL  ES       R.DATOS R.SECUENCIAMIENTO
+    1  00000004  0049XXXX    addi x0 , x0 , x000 | DL  | nop | nop | nop | nop      RD:  0  RS:  0
+    2  00000008  XXXXXXXX     XXX | DL  | A   | nop | nop | nop      RD:  0  RS:  0
+
+ Contenido de la memoria de datos. MD
+
+dir/16  hexadecimal
+         (dir mod 16)/4  binario
+            dir mod 4  binario
+                          contenido  hexadecimal
+ 31 : 4 3:2     1:0     31:24  . . 7:0   bits de direction y contenido
+ 1000000 00 11 10 01 00   00 49 XX XX
+ 1000000 01 11 10 01 00   XX XX XX XX
+
+ Contenido de la memoria de instrucciones. MI
+
+dir/16  hexadecimal
+         (dir mod 16)/4  binario
+            dir mod 4  binario
+                          contenido  hexadecimal
+ 31 : 4 3:2     1:0     31:24  . . 7:0   bits de direction y contenido
+ 0000000 00 11 10 01 00   00 49 XX XX     XXX
+ 0000000 01 11 10 01 00   XX XX XX XX     XXX
+ 0000000 10 11 10 01 00   XX XX XX XX     XXX
+ 0000000 11 11 10 01 00   00 00 00 00     XXX
+
+ Contenido del banco de registros. BR
+
+Num registro decimal
+      contenido  hexadecimal
+     31:24  . . 7:0     bits de contenido
+   0   XX XX XX XX

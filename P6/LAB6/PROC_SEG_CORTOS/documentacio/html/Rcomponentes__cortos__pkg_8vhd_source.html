@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>PROCESADOR SEGMENTADO CON CORTOCIRCUITOS: Fichero Fuente LAB6/PROC_SEG_CORTOS/CORTOCIRCUITOS/componentes_cortos_pkg/Rcomponentes_cortos_pkg.vhd</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROCESADOR SEGMENTADO CON CORTOCIRCUITOS
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Design&#160;Unit&#160;List</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b8ff7ea0be8e357f336fa7aa1df92a3a.html">LAB6</a></li><li class="navelem"><a class="el" href="dir_95b4743b5174965d00e77a6b7a76391d.html">PROC_SEG_CORTOS</a></li><li class="navelem"><a class="el" href="dir_e6c24edbe19e813a975f21e7fa0e3e15.html">CORTOCIRCUITOS</a></li><li class="navelem"><a class="el" href="dir_3e65ea726063b96703c067f85073af51.html">componentes_cortos_pkg</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Rcomponentes_cortos_pkg.vhd</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Rcomponentes__cortos__pkg_8vhd.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">--</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">-- Copyright (c) 2018, UPC</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">-- All rights reserved.</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">-- </span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classRcomponentes__cortos__pkg.html#a0a6af6eef40212dbaf130d57ce711256">    6</a></span>&#160;<span class="vhdlkeyword">library </span><span class="keywordflow">ieee</span>;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classRcomponentes__cortos__pkg.html#acd03516902501cd1c7296a98e22c6fcb">    7</a></span>&#160;<span class="vhdlkeyword">use </span><a class="code" href="classcomponentes__cortos__pkg.html#a0a6af6eef40212dbaf130d57ce711256">ieee</a>.std_logic_1164.<span class="keywordflow">all</span>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classRcomponentes__cortos__pkg.html#a1de3d6a72279acdc8f85b56c5cfe12cd">    9</a></span>&#160;<span class="vhdlkeyword">use </span>work.<a class="code" href="classparam__disenyo__pkg.html">param_disenyo_pkg</a>.<span class="keywordflow">all</span>;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classRcomponentes__cortos__pkg.html#a9ba79191d29a85e638dc8edd1fb43209">   10</a></span>&#160;<span class="vhdlkeyword">use </span>work.<a class="code" href="classcte__tipos__deco__camino__pkg.html">cte_tipos_deco_camino_pkg</a>.<span class="keywordflow">all</span>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespaceRcomponentes__cortos__pkg.html">   12</a></span>&#160;<span class="keywordflow">package </span><a class="code" href="classRcomponentes__cortos__pkg.html">Rcomponentes_cortos_pkg</a> <span class="keywordflow">is</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classRcomponentes__cortos__pkg.html#a64382dcb1d807d0796e8faca4673747d">   14</a></span>&#160;<span class="keywordflow">component</span> <a class="code" href="classRcortosALU.html">RcortosALU</a> <span class="keywordflow">is</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   <span class="keywordflow">port</span> (<a class="code" href="classRcortosALU.html#ae81c37951d56ba49636dc2d009a5f316">reloj</a>, <a class="code" href="classRcortosALU.html#a9b7451d3c181f501153974dd421f1ce1">Pcero</a>: <span class="comment">std_logic</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="classRcortosALU.html#aa144d6e9ce15af02323593a3fc2cf111">a</a>, <a class="code" href="classRcortosALU.html#a3baad50904d3cf77c3d2734365678cd8">cort</a>: <span class="keywordflow">in</span> <a class="code" href="classparam__disenyo__pkg.html#ad28a6230613f0109957efc4be5801bb5">tam_dat_camino</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <a class="code" href="classRcortosALU.html#aee7a7e2bf50e740680af5e22fc7509e7">selc1</a>, <a class="code" href="classRcortosALU.html#a1c3cc62b1b7d6d00b654079e98f49abe">selc2</a>: <span class="comment">std_logic</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="classRcortosALU.html#a2ffc16c5d97b93ef9e2db41aefa09e5f">s</a>: <span class="keywordflow">out</span> <a class="code" href="classparam__disenyo__pkg.html#ad28a6230613f0109957efc4be5801bb5">tam_dat_camino</a>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordflow">end</span> <span class="keywordflow">component</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classRcomponentes__cortos__pkg.html#a26b5971ec69d26ee37854db23645edb0">   21</a></span>&#160;<span class="keywordflow">component</span> <a class="code" href="classRcortosDL.html">RcortosDL</a> <span class="keywordflow">is</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;   <span class="keywordflow">port</span> (<a class="code" href="classRcortosDL.html#ae81c37951d56ba49636dc2d009a5f316">reloj</a>, <a class="code" href="classRcortosDL.html#a9b7451d3c181f501153974dd421f1ce1">Pcero</a>: <span class="comment">std_logic</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;      <a class="code" href="classRcortosDL.html#aa144d6e9ce15af02323593a3fc2cf111">a</a>, <a class="code" href="classRcortosDL.html#a3baad50904d3cf77c3d2734365678cd8">cort</a>: <span class="keywordflow">in</span> <a class="code" href="classparam__disenyo__pkg.html#ad28a6230613f0109957efc4be5801bb5">tam_dat_camino</a>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      <a class="code" href="classRcortosDL.html#aee7a7e2bf50e740680af5e22fc7509e7">selc1</a>, <a class="code" href="classRcortosDL.html#a1c3cc62b1b7d6d00b654079e98f49abe">selc2</a>: <span class="comment">std_logic</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      <a class="code" href="classRcortosDL.html#a2ffc16c5d97b93ef9e2db41aefa09e5f">s</a>: <span class="keywordflow">out</span> <a class="code" href="classparam__disenyo__pkg.html#ad28a6230613f0109957efc4be5801bb5">tam_dat_camino</a>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordflow">end</span> <span class="keywordflow">component</span>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordflow">end</span> <span class="keywordflow">package</span> <span class="vhdlchar">Rcomponentes_cortos_pkg</span>;</div><div class="ttc" id="classparam__disenyo__pkg_html_ad28a6230613f0109957efc4be5801bb5"><div class="ttname"><a href="classparam__disenyo__pkg.html#ad28a6230613f0109957efc4be5801bb5">param_disenyo_pkg.tam_dat_camino</a></div><div class="ttdeci">std_logic_vector(   tam_dat- 1 downto  0)   tam_dat_camino</div><div class="ttdef"><b>Definition:</b> <a href="param__disenyo__pkg_8vhd_source.html#l00018">param_disenyo_pkg.vhd:18</a></div></div>
+<div class="ttc" id="classRcortosALU_html_a1c3cc62b1b7d6d00b654079e98f49abe"><div class="ttname"><a href="classRcortosALU.html#a1c3cc62b1b7d6d00b654079e98f49abe">RcortosALU.selc2</a></div><div class="ttdeci">selc2std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosALU_8vhd_source.html#l00018">RcortosALU.vhd:18</a></div></div>
+<div class="ttc" id="classRcortosDL_html_a3baad50904d3cf77c3d2734365678cd8"><div class="ttname"><a href="classRcortosDL.html#a3baad50904d3cf77c3d2734365678cd8">RcortosDL.cort</a></div><div class="ttdeci">in corttam_dat_camino  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosDL_8vhd_source.html#l00017">RcortosDL.vhd:17</a></div></div>
+<div class="ttc" id="classparam__disenyo__pkg_html"><div class="ttname"><a href="classparam__disenyo__pkg.html">param_disenyo_pkg</a></div><div class="ttdef"><b>Definition:</b> <a href="param__disenyo__pkg_8vhd_source.html#l00009">param_disenyo_pkg.vhd:9</a></div></div>
+<div class="ttc" id="classRcortosDL_html_a2ffc16c5d97b93ef9e2db41aefa09e5f"><div class="ttname"><a href="classRcortosDL.html#a2ffc16c5d97b93ef9e2db41aefa09e5f">RcortosDL.s</a></div><div class="ttdeci">out stam_dat_camino  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosDL_8vhd_source.html#l00019">RcortosDL.vhd:19</a></div></div>
+<div class="ttc" id="classRcortosDL_html_a9b7451d3c181f501153974dd421f1ce1"><div class="ttname"><a href="classRcortosDL.html#a9b7451d3c181f501153974dd421f1ce1">RcortosDL.Pcero</a></div><div class="ttdeci">Pcerostd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosDL_8vhd_source.html#l00016">RcortosDL.vhd:16</a></div></div>
+<div class="ttc" id="classRcortosALU_html_a2ffc16c5d97b93ef9e2db41aefa09e5f"><div class="ttname"><a href="classRcortosALU.html#a2ffc16c5d97b93ef9e2db41aefa09e5f">RcortosALU.s</a></div><div class="ttdeci">out stam_dat_camino  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosALU_8vhd_source.html#l00019">RcortosALU.vhd:19</a></div></div>
+<div class="ttc" id="classcte__tipos__deco__camino__pkg_html"><div class="ttname"><a href="classcte__tipos__deco__camino__pkg.html">cte_tipos_deco_camino_pkg</a></div><div class="ttdef"><b>Definition:</b> <a href="cte__tipos__deco__camino__pkg_8vhd_source.html#l00010">cte_tipos_deco_camino_pkg.vhd:10</a></div></div>
+<div class="ttc" id="classRcomponentes__cortos__pkg_html"><div class="ttname"><a href="classRcomponentes__cortos__pkg.html">Rcomponentes_cortos_pkg</a></div><div class="ttdef"><b>Definition:</b> <a href="Rcomponentes__cortos__pkg_8vhd_source.html#l00012">Rcomponentes_cortos_pkg.vhd:12</a></div></div>
+<div class="ttc" id="classRcortosALU_html_a3baad50904d3cf77c3d2734365678cd8"><div class="ttname"><a href="classRcortosALU.html#a3baad50904d3cf77c3d2734365678cd8">RcortosALU.cort</a></div><div class="ttdeci">in corttam_dat_camino  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosALU_8vhd_source.html#l00017">RcortosALU.vhd:17</a></div></div>
+<div class="ttc" id="classcomponentes__cortos__pkg_html_a0a6af6eef40212dbaf130d57ce711256"><div class="ttname"><a href="classcomponentes__cortos__pkg.html#a0a6af6eef40212dbaf130d57ce711256">componentes_cortos_pkg.ieee</a></div><div class="ttdeci">_library_ ieeeieee</div><div class="ttdef"><b>Definition:</b> <a href="componentes__cortos__pkg_8vhd_source.html#l00006">componentes_cortos_pkg.vhd:6</a></div></div>
+<div class="ttc" id="classRcortosDL_html_ae81c37951d56ba49636dc2d009a5f316"><div class="ttname"><a href="classRcortosDL.html#ae81c37951d56ba49636dc2d009a5f316">RcortosDL.reloj</a></div><div class="ttdeci">relojstd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosDL_8vhd_source.html#l00016">RcortosDL.vhd:16</a></div></div>
+<div class="ttc" id="classRcortosDL_html_a1c3cc62b1b7d6d00b654079e98f49abe"><div class="ttname"><a href="classRcortosDL.html#a1c3cc62b1b7d6d00b654079e98f49abe">RcortosDL.selc2</a></div><div class="ttdeci">selc2std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosDL_8vhd_source.html#l00018">RcortosDL.vhd:18</a></div></div>
+<div class="ttc" id="classRcortosDL_html_aee7a7e2bf50e740680af5e22fc7509e7"><div class="ttname"><a href="classRcortosDL.html#aee7a7e2bf50e740680af5e22fc7509e7">RcortosDL.selc1</a></div><div class="ttdeci">selc1std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosDL_8vhd_source.html#l00018">RcortosDL.vhd:18</a></div></div>
+<div class="ttc" id="classRcortosDL_html_aa144d6e9ce15af02323593a3fc2cf111"><div class="ttname"><a href="classRcortosDL.html#aa144d6e9ce15af02323593a3fc2cf111">RcortosDL.a</a></div><div class="ttdeci">in atam_dat_camino  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosDL_8vhd_source.html#l00017">RcortosDL.vhd:17</a></div></div>
+<div class="ttc" id="classRcortosALU_html_aa144d6e9ce15af02323593a3fc2cf111"><div class="ttname"><a href="classRcortosALU.html#aa144d6e9ce15af02323593a3fc2cf111">RcortosALU.a</a></div><div class="ttdeci">in atam_dat_camino  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosALU_8vhd_source.html#l00017">RcortosALU.vhd:17</a></div></div>
+<div class="ttc" id="classRcortosALU_html"><div class="ttname"><a href="classRcortosALU.html">RcortosALU</a></div><div class="ttdef"><b>Definition:</b> <a href="RcortosALU_8vhd_source.html#l00015">RcortosALU.vhd:15</a></div></div>
+<div class="ttc" id="classRcortosALU_html_a9b7451d3c181f501153974dd421f1ce1"><div class="ttname"><a href="classRcortosALU.html#a9b7451d3c181f501153974dd421f1ce1">RcortosALU.Pcero</a></div><div class="ttdeci">Pcerostd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosALU_8vhd_source.html#l00016">RcortosALU.vhd:16</a></div></div>
+<div class="ttc" id="classRcortosDL_html"><div class="ttname"><a href="classRcortosDL.html">RcortosDL</a></div><div class="ttdef"><b>Definition:</b> <a href="RcortosDL_8vhd_source.html#l00015">RcortosDL.vhd:15</a></div></div>
+<div class="ttc" id="classRcortosALU_html_aee7a7e2bf50e740680af5e22fc7509e7"><div class="ttname"><a href="classRcortosALU.html#aee7a7e2bf50e740680af5e22fc7509e7">RcortosALU.selc1</a></div><div class="ttdeci">selc1std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosALU_8vhd_source.html#l00018">RcortosALU.vhd:18</a></div></div>
+<div class="ttc" id="classRcortosALU_html_ae81c37951d56ba49636dc2d009a5f316"><div class="ttname"><a href="classRcortosALU.html#ae81c37951d56ba49636dc2d009a5f316">RcortosALU.reloj</a></div><div class="ttdeci">relojstd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="RcortosALU_8vhd_source.html#l00016">RcortosALU.vhd:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 7 de Mayo de 2019 10:23:11 para PROCESADOR SEGMENTADO CON CORTOCIRCUITOS por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>PROCESADOR SEGMENTADO CON CORTOCIRCUITOS reduccion de la latencia en la inst. jal: Fichero Fuente LAB6/PROC_SEG_ModSecu_relI/CONTROL_SEG_CORTOS/componentes_cntl_seg_pkg/componentes_control_seg_C_ModSecu_relI_pkg.vhd</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROCESADOR SEGMENTADO CON CORTOCIRCUITOS reduccion de la latencia en la inst. jal
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="namespaces.html"><span>Paquetes</span></a></li>
+      <li><a href="annotated.html"><span>Design&#160;Unit&#160;List</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b8ff7ea0be8e357f336fa7aa1df92a3a.html">LAB6</a></li><li class="navelem"><a class="el" href="dir_be438b9183eae871c60b38f65847ef22.html">PROC_SEG_ModSecu_relI</a></li><li class="navelem"><a class="el" href="dir_201114a5d7a10681bb2e35982659903f.html">CONTROL_SEG_CORTOS</a></li><li class="navelem"><a class="el" href="dir_3534feef4bf481c43c9420c14b117604.html">componentes_cntl_seg_pkg</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">componentes_control_seg_C_ModSecu_relI_pkg.vhd</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="componentes__control__seg__C__ModSecu__relI__pkg_8vhd.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">--</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">-- Copyright (c) 2018, UPC</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">-- All rights reserved.</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">-- </span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classcomponentes__control__seg__C__ModSecu__relI__pkg.html#a0a6af6eef40212dbaf130d57ce711256">    6</a></span>&#160;<span class="vhdlkeyword">library </span><span class="keywordflow">ieee</span>;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classcomponentes__control__seg__C__ModSecu__relI__pkg.html#acd03516902501cd1c7296a98e22c6fcb">    7</a></span>&#160;<span class="vhdlkeyword">use </span><a class="code" href="classRcomponentes__proc__MD__MI__C__ModSecu__relI__pkg.html#a0a6af6eef40212dbaf130d57ce711256">ieee</a>.std_logic_1164.<span class="keywordflow">all</span>;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classcomponentes__control__seg__C__ModSecu__relI__pkg.html#a1de3d6a72279acdc8f85b56c5cfe12cd">    9</a></span>&#160;<span class="vhdlkeyword">use </span>work.<a class="code" href="classparam__disenyo__pkg.html">param_disenyo_pkg</a>.<span class="keywordflow">all</span>;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classcomponentes__control__seg__C__ModSecu__relI__pkg.html#a9ba79191d29a85e638dc8edd1fb43209">   10</a></span>&#160;<span class="vhdlkeyword">use </span>work.<a class="code" href="classcte__tipos__deco__camino__pkg.html">cte_tipos_deco_camino_pkg</a>.<span class="keywordflow">all</span>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespacecomponentes__control__seg__C__ModSecu__relI__pkg.html">   12</a></span>&#160;<span class="keywordflow">package </span><a class="code" href="classcomponentes__control__seg__C__ModSecu__relI__pkg.html">componentes_control_seg_C_ModSecu_relI_pkg</a> <span class="keywordflow">is</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classcomponentes__control__seg__C__ModSecu__relI__pkg.html#a44ec2607ba69d7813c637d5c81e652f5">   14</a></span>&#160;<span class="keywordflow">component</span> <a class="code" href="classLIB__C__ModSecu__relI.html">LIB_C_ModSecu_relI</a> <span class="keywordflow">is</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;   <span class="keywordflow">port</span>(<a class="code" href="classLIB__C__ModSecu__relI.html#a9a2054ec7f63792c3956fe7264bbd941">reloj</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#aaaf76b3c92306baf67cc09a1ff48254d">pcero</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a5efe61e4691199c7d3ffbbe4872056b4">B</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a8455d4375b7fc0d9d99399815d38c73c">I</a> : <span class="keywordflow">in</span> <span class="comment">std_logic</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;      <a class="code" href="classLIB__C__ModSecu__relI.html#a680f1a91daaf7d2bd6e026d2c8c1ae57">instruc</a>: <span class="keywordflow">in</span> <a class="code" href="classparam__disenyo__pkg.html#a2f340d91bb2d81cba1d248f4379190bf">tipo_inst_busq</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <a class="code" href="classLIB__C__ModSecu__relI.html#a74849ece92d12e903900a96328069713">C1L1</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a2cf5e6b0d5b201e591ede28f8a36b10b">C2L1</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a136d285f2fdb792fc60e8eb16930739c">C3L1</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a47e5e48edcea0448770baf33c9a6d2dc">C4L1</a>: <span class="keywordflow">out</span> <span class="comment">std_logic</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;      <a class="code" href="classLIB__C__ModSecu__relI.html#ad1e60616ab9d014c61a44decc10e314f">C1L2</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a12debb0cf3e631f1667c70a56a254231">C2L2</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a9d63fc333de155cfadd21377a76abe98">C3L2</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#ab4102d75e7c8ade7865f905504a459b7">C4L2</a>: <span class="keywordflow">out</span> <span class="comment">std_logic</span>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;      <a class="code" href="classLIB__C__ModSecu__relI.html#a574fe127275e02517e598e7eb32d6945">bloqCP</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a5ea740bb358914b031bf3c69c2a14b87">bloqBDL</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a25830531f2e6d8df33ec31bee0b40ace">inyecBDL</a>, <a class="code" href="classLIB__C__ModSecu__relI.html#a85116e2c9358dc6aab3c4a40a822db7e">inyecDLA</a>: <span class="keywordflow">out</span> <span class="comment">std_logic</span>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordflow">end</span> <span class="keywordflow">component</span>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordflow">end</span> <span class="keywordflow">package</span> <span class="vhdlchar">componentes_control_seg_C_ModSecu_relI_pkg</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="ttc" id="classparam__disenyo__pkg_html"><div class="ttname"><a href="classparam__disenyo__pkg.html">param_disenyo_pkg</a></div><div class="ttdef"><b>Definition:</b> <a href="param__disenyo__pkg_8vhd_source.html#l00009">param_disenyo_pkg.vhd:9</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a136d285f2fdb792fc60e8eb16930739c"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a136d285f2fdb792fc60e8eb16930739c">LIB_C_ModSecu_relI.C3L1</a></div><div class="ttdeci">out C3L1std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00020">LIB_C_ModSecu_relI.vhd:20</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a74849ece92d12e903900a96328069713"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a74849ece92d12e903900a96328069713">LIB_C_ModSecu_relI.C1L1</a></div><div class="ttdeci">out C1L1std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00020">LIB_C_ModSecu_relI.vhd:20</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a574fe127275e02517e598e7eb32d6945"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a574fe127275e02517e598e7eb32d6945">LIB_C_ModSecu_relI.bloqCP</a></div><div class="ttdeci">out bloqCPstd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00022">LIB_C_ModSecu_relI.vhd:22</a></div></div>
+<div class="ttc" id="classcomponentes__control__seg__C__ModSecu__relI__pkg_html"><div class="ttname"><a href="classcomponentes__control__seg__C__ModSecu__relI__pkg.html">componentes_control_seg_C_ModSecu_relI_pkg</a></div><div class="ttdef"><b>Definition:</b> <a href="componentes__control__seg__C__ModSecu__relI__pkg_8vhd_source.html#l00012">componentes_control_seg_C_ModSecu_relI_pkg.vhd:12</a></div></div>
+<div class="ttc" id="classcte__tipos__deco__camino__pkg_html"><div class="ttname"><a href="classcte__tipos__deco__camino__pkg.html">cte_tipos_deco_camino_pkg</a></div><div class="ttdef"><b>Definition:</b> <a href="cte__tipos__deco__camino__pkg_8vhd_source.html#l00010">cte_tipos_deco_camino_pkg.vhd:10</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a9d63fc333de155cfadd21377a76abe98"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a9d63fc333de155cfadd21377a76abe98">LIB_C_ModSecu_relI.C3L2</a></div><div class="ttdeci">out C3L2std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00021">LIB_C_ModSecu_relI.vhd:21</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a9a2054ec7f63792c3956fe7264bbd941"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a9a2054ec7f63792c3956fe7264bbd941">LIB_C_ModSecu_relI.reloj</a></div><div class="ttdeci">in relojstd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00018">LIB_C_ModSecu_relI.vhd:18</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a5efe61e4691199c7d3ffbbe4872056b4"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a5efe61e4691199c7d3ffbbe4872056b4">LIB_C_ModSecu_relI.B</a></div><div class="ttdeci">in Bstd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00018">LIB_C_ModSecu_relI.vhd:18</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a25830531f2e6d8df33ec31bee0b40ace"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a25830531f2e6d8df33ec31bee0b40ace">LIB_C_ModSecu_relI.inyecBDL</a></div><div class="ttdeci">out inyecBDLstd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00022">LIB_C_ModSecu_relI.vhd:22</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a8455d4375b7fc0d9d99399815d38c73c"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a8455d4375b7fc0d9d99399815d38c73c">LIB_C_ModSecu_relI.I</a></div><div class="ttdeci">in Istd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00018">LIB_C_ModSecu_relI.vhd:18</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a5ea740bb358914b031bf3c69c2a14b87"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a5ea740bb358914b031bf3c69c2a14b87">LIB_C_ModSecu_relI.bloqBDL</a></div><div class="ttdeci">out bloqBDLstd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00022">LIB_C_ModSecu_relI.vhd:22</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_ad1e60616ab9d014c61a44decc10e314f"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#ad1e60616ab9d014c61a44decc10e314f">LIB_C_ModSecu_relI.C1L2</a></div><div class="ttdeci">out C1L2std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00021">LIB_C_ModSecu_relI.vhd:21</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a47e5e48edcea0448770baf33c9a6d2dc"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a47e5e48edcea0448770baf33c9a6d2dc">LIB_C_ModSecu_relI.C4L1</a></div><div class="ttdeci">out C4L1std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00020">LIB_C_ModSecu_relI.vhd:20</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a2cf5e6b0d5b201e591ede28f8a36b10b"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a2cf5e6b0d5b201e591ede28f8a36b10b">LIB_C_ModSecu_relI.C2L1</a></div><div class="ttdeci">out C2L1std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00020">LIB_C_ModSecu_relI.vhd:20</a></div></div>
+<div class="ttc" id="classRcomponentes__proc__MD__MI__C__ModSecu__relI__pkg_html_a0a6af6eef40212dbaf130d57ce711256"><div class="ttname"><a href="classRcomponentes__proc__MD__MI__C__ModSecu__relI__pkg.html#a0a6af6eef40212dbaf130d57ce711256">Rcomponentes_proc_MD_MI_C_ModSecu_relI_pkg.ieee</a></div><div class="ttdeci">_library_ ieeeieee</div><div class="ttdef"><b>Definition:</b> <a href="Rcomponentes__proc__MD__MI__C__ModSecu__relI__pkg_8vhd_source.html#l00006">Rcomponentes_proc_MD_MI_C_ModSecu_relI_pkg.vhd:6</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html">LIB_C_ModSecu_relI</a></div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00017">LIB_C_ModSecu_relI.vhd:17</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_aaaf76b3c92306baf67cc09a1ff48254d"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#aaaf76b3c92306baf67cc09a1ff48254d">LIB_C_ModSecu_relI.pcero</a></div><div class="ttdeci">in pcerostd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00018">LIB_C_ModSecu_relI.vhd:18</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a85116e2c9358dc6aab3c4a40a822db7e"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a85116e2c9358dc6aab3c4a40a822db7e">LIB_C_ModSecu_relI.inyecDLA</a></div><div class="ttdeci">out inyecDLAstd_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00022">LIB_C_ModSecu_relI.vhd:22</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a680f1a91daaf7d2bd6e026d2c8c1ae57"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a680f1a91daaf7d2bd6e026d2c8c1ae57">LIB_C_ModSecu_relI.instruc</a></div><div class="ttdeci">in instructipo_inst_busq  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00019">LIB_C_ModSecu_relI.vhd:19</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_a12debb0cf3e631f1667c70a56a254231"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#a12debb0cf3e631f1667c70a56a254231">LIB_C_ModSecu_relI.C2L2</a></div><div class="ttdeci">out C2L2std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00021">LIB_C_ModSecu_relI.vhd:21</a></div></div>
+<div class="ttc" id="classLIB__C__ModSecu__relI_html_ab4102d75e7c8ade7865f905504a459b7"><div class="ttname"><a href="classLIB__C__ModSecu__relI.html#ab4102d75e7c8ade7865f905504a459b7">LIB_C_ModSecu_relI.C4L2</a></div><div class="ttdeci">out C4L2std_logic  </div><div class="ttdef"><b>Definition:</b> <a href="LIB__C__ModSecu__relI_8vhd_source.html#l00021">LIB_C_ModSecu_relI.vhd:21</a></div></div>
+<div class="ttc" id="classparam__disenyo__pkg_html_a2f340d91bb2d81cba1d248f4379190bf"><div class="ttname"><a href="classparam__disenyo__pkg.html#a2f340d91bb2d81cba1d248f4379190bf">param_disenyo_pkg.tipo_inst_busq</a></div><div class="ttdeci">std_logic_vector(   tam_instruc- 1 downto  0)   tipo_inst_busq</div><div class="ttdef"><b>Definition:</b> <a href="param__disenyo__pkg_8vhd_source.html#l00022">param_disenyo_pkg.vhd:22</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Martes, 7 de Mayo de 2019 10:23:12 para PROCESADOR SEGMENTADO CON CORTOCIRCUITOS reduccion de la latencia en la inst. jal por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>
